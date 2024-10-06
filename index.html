@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo typewriter"><h1>Akash K</h1></div>
+        <div>
+            <ul class="nav-links" data-aos="fade-left" data-aos-delay="125" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li> <a href="#experience">Skills</a></li>
+                <li> <a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="hamburger-nav">
+        <div class="logo typewriter" ><h1>Akash K</h1></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li> <a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/cropped-image.png" alt="Akash`s profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1" data-aos="fade-down" data-aos-delay="150">Hello I'm</p>
+            <h1 class="title" data-aos="fade-down" data-aos-delay="250">Akash</h1>
+            <p class="section__text_p2" data-aos="fade-down" data-aos-delay="350">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/r.pdf')" data-aos="fade-right" data-aos-delay="250">Download</button>
+                <button class="btn btn-color-2" onclick="location.href='index.html#contact'" data-aos="fade-left" data-aos-delay="250">Contact Info</button>
+            </div>
+            <div class="social-containers">
+                <i class="contact-icon bx bxl-linkedin bx-lg" data-aos="fade-right" data-aos-delay="250" onclick="location.href='https://www.linkedin.com/in/akash-k-4b1747251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"></i>
+                <i class="contact-icon bx bxl-github bx-lg" data-aos="fade-left" data-aos-delay="250" onclick="location.href='https://github.com/AkashKasimani'"></i>
+                
+            </div>
+        </div>
+        
+    </section>
+    <section id="about">
+        <p class="section__text_p1" data-aos="fade-up">Get to Know More !</p>
+        <h1 class="title"data-aos="fade-down">About Me</h1>
+        <div class="section-container" data-aos="fade-down" data-aos-delay="150" >
+            <div class="section__pic-container">
+                <img src="./assets/abot.png" alt="about-pic" class="about-pic"> 
+            </div>
+            <div class="about-details-containers">
+                <div class="about-containers">
+                    <div class="details-containers" data-aos="fade-right" data-aos-delay="150">
+                        <img src="./assets/experience.png" alt="experience-icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Fresher<br>Web Developer</p>
+                    </div>
+                    <div class="details-containers" data-aos="fade-left" data-aos-delay="150">
+                        <img src="./assets/education.png" alt="education-icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E Computer Science And <br>Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container"data-aos="fade-down" data-aos-delay="250">
+                    <p>As a <h3> Passionate Computer Science Engineer,</h3> my goal is to leverage my technical skills and creativity to excel in the field of web development.
+                        I aspire to contribute innovative solutions,build user-friendly interfaces and collaborate with dynamic teams to create impactful digital experiences. I aim to make a significant impact in the digital landscape.
+                        Seeking opportunities to create elegant, efficient, and user-centric web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="experience">
+    <p class="section__text_p1" data-aos="fade-up" data-aos-delay="150">Explore My</p>
+    <h1 class="title"data-aos="fade-down" data-aos-delay="150">Skills</h1>
+    <p style="text-align: center;" data-aos="fade-up" data-aos-delay="250" >
+        Without sharpen your weapon; standing on the battlefield would not
+        increase your chance of winning
+      </p>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-containers" data-aos="fade-right" data-aos-delay="300">
+                <h2 class="experience-sub-title"data-aos="fade-down" data-aos-delay="200">Frontend Development</h2>
+                <div class="article-container"data-aos="fade-down" data-aos-delay="250">
+                    <article>
+                        <i class="bx bxl-html5 bx-lg icon"></i>
+                        <div>
+                            <h3>Html</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <i class="icon bx bxl-css3 bx-lg"></i>
+                        <div>
+                            <h3>Css</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="icon bx bxl-bootstrap bx-lg"></i>
+                        <div>
+                            <h3>BootStrap</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="icon bx bxl-javascript bx-lg"></i>
+                        <div>
+                            <h3>Java Script</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="icon bx bxl-react bx-lg"></i>
+                        <div>
+                            <h3>React Js</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-containers"  data-aos="fade-left" data-aos-delay="300">
+                <h2 class="experience-sub-title" data-aos="fade-down" data-aos-delay="200">Backend Development</h2>
+                <div class="article-container"data-aos="fade-down" data-aos-delay="250">
+                    <article>
+                        <i class="icon bx bxl-postgresql bx-lg"></i>
+
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="icon bx bxl-nodejs bx-lg"></i>
+
+                        <div>
+                            <h3>Node Js</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                
+                    <article>
+                        <img src="./assets/expressjs.png" alt="experience icon"  class="icon"></i>
+
+                        <div>
+                            <h3>Express Js</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <i class="icon bx bxl-git bx-lg"></i>
+
+                        <div>
+                            <h3>Git & Github</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/rest.png" alt="experience icon" class="icon">
+
+                        <div>
+                            <h3>Rest API</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<section id="project">
+    <p class="section__text_p1"data-aos="fade-up" data-aos-delay="150">Browse My  Recent</p>
+    <h1 class="title" data-aos="fade-down" data-aos-delay="150">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-containers color-container" data-aos="fade-left" data-aos-delay="350">
+                <div class="article-container" data-aos="fade-left" data-aos-delay="250">
+                    <img src="./assets/Project 1.jpg" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title" data-aos="fade-left" data-aos-delay="350">Calculator</h2>
+                <div class="btn-container" data-aos="fade-left" data-aos-delay="450">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AkashKasimani/Calculator-app'">GitHub</button>
+                </div>
+                </div>
+
+                <div class="details-containers color-container" data-aos="fade-up" data-aos-delay="350">
+                    <div class="article-container" data-aos="fade-up" data-aos-delay="250">
+                        <img src="./assets/download.png" alt="project-2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title" data-aos="fade-up" data-aos-delay="350">Portfolio</h2>
+                    <div class="btn-container" data-aos="fade-up" data-aos-delay="450">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='#'">GitHub</button>
+                    </div>
+                </div>
+                    
+                <div class="details-containers color-container" data-aos="fade-right" data-aos-delay="350">
+                    <div class="article-container"data-aos="fade-right" data-aos-delay="250">
+                        <img src="./assets/qrimage.png" alt="project-3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title" data-aos="fade-right" data-aos-delay="350">Project 3</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" data-aos="fade-right" data-aos-delay="450" onclick="locatiom.href='#'">GitHub</button>
+                    </div>
+                </div>
+         </div>
+    </div>
+        
+</section>
+<section id="contact">
+    <p class="section__text_p1"data-aos="fade-up" data-aos-delay="150">Get in Touch</p>
+    <h1 class="title"data-aos="fade-down" data-aos-delay="150">Contact Me</h1>
+    <div class="contact-info-upper-container" data-aos="fade-down" data-aos-delay="350">
+        <div class="contact-info-containers">
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=akashk26062003@gmail.com" data-aos="fade-down" data-aos-delay="50"><i class="bx bxl-gmail bx-md contact-icon"></i></a>
+            
+        </div>
+        <div class="contact-info-containers">
+            <a href="https://www.linkedin.com/in/akash-k-4b1747251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" data-aos="fade-down" data-aos-delay="150">
+                <i class="bx bxl-linkedin bx-md contact-icon"></i></a>
+        </div>
+        <div class="contact-info-containers">
+            <a href="https://github.com/AkashKasimani" data-aos="fade-down" data-aos-delay="250"> 
+            <i class="icon contact-icon bx bxl-github bx-md"></i></a>
+        </div>
+
+        <div class="contact-info-containers">
+            <a href="https://www.facebook.com/kasimanikandan.kasimanikandan?mibextid=ZbWKwL" data-aos="fade-down" data-aos-delay="350"><i class="bx bxl-facebook bx-md contact-icon"></i></a>
+        </div>
+            <div class="contact-info-containers">
+              <a href="https://www.instagram.com/akaz_z26/" data-aos="fade-down" data-aos-delay="450"><i class="bx bxl-instagram bx-md contact-icon"></i></a>
+            </div>
+            <div class="contact-info-containers">
+            <a href="https://x.com/AkashKasi26?t=aWZFMtCyAmDg3BsOGsK30g&s=08" data-aos="fade-down" data-aos-delay="550"><i class="contact-icon bx bxl-twitter bx-md"></i></a>
+        </div>
+        <div class="contact-info-containers">
+            <a href="https://www.snapchat.com/add/akazz_z?share_id=9AzFdHQSkQg&locale=en-US" data-aos="fade-down" data-aos-delay="650"><i class="contact-icon bx bxl-snapchat bx-md"></i></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="index.html" data-aos="fade-down" data-aos-delay="200">Home</a></li>
+                <li><a href="#about" data-aos="fade-down" data-aos-delay="300">About</a></li>
+                <li><a href="#experience" data-aos="fade-down" data-aos-delay="400">Experience</a></li>
+                <li><a href="#project" data-aos="fade-down" data-aos-delay="500">Project</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#2626; 2024 Akash. All Rights Reserved.</p>
+</footer>
+    <button class="go-top-btn">
+        <img src="./assets/arrow.png" alt="arrow up">
+      </button>
+<script src="index.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1200,
+    once: false,
+  });</script>
+
+</body>
+
+</html>
