@@ -383,7 +383,6 @@ transition: transform .2s ease-in-out 0s ;
   .go-top-btn img {
     width: 25px;
     height: 25px;
-    z-index: 10;
   }
 .typewriter h1{
     font-family: monospace;
