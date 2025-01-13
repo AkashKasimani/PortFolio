@@ -137,6 +137,7 @@ section{
     height: 80vh;
 }
 .section__pic-container{
+    justify-content: center;
     display: flex;
     height: 400px;
     width: 400px;
