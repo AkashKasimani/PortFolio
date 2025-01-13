@@ -84,6 +84,7 @@ a:hover{
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+        z-index: 10;
 }
 .menu-links a{
     display: block;
@@ -376,11 +377,13 @@ transition: transform .2s ease-in-out 0s ;
     background: none;
     border: none;
     transition: transform .5s ease-in-out 0s ;
+    z-index: 10;
   }
   
   .go-top-btn img {
     width: 25px;
     height: 25px;
+    z-index: 10;
   }
 .typewriter h1{
     font-family: monospace;
