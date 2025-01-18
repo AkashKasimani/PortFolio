@@ -15,7 +15,9 @@
 
 @media screen and (max-width:1200px) {
   
-
+ #projects {
+      height: fit-content;
+    }
     .navbar {
         display: none;
     }
