@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
+    
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
     box-sizing: border-box;
+
 }
+
 body{
     font-family: "Poppins",sans-serif;
-    background: linear-gradient(to right,#5cc2f5,#ffd9a0);
+    background: linear-gradient(to left,#5cc2f5,#ffd9a0);
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
     padding: 0;
-    
+
 }
 p{
     color: rgb(85, 85, 85);
@@ -25,6 +28,7 @@ a,
 
 nav,
 .nav-links{
+    
     display: flex;
     flex-direction: row;
     transition: .5s;
@@ -36,6 +40,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    
 }
 .nav-links{
     gap: 1.4rem;
@@ -63,11 +68,14 @@ a:hover{
 }
 .hamburger-nav{
     display: none;
+    z-index: 20;
 }
 .hamburger-menu{
     position: relative;
     display: inline-block;
     z-index: 10;
+    
+
 }
 .hamburger-icon{
     display: flex;
@@ -76,12 +84,15 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
+    
 }
 .hamburger-icon span {
     width: 100%;
     height: 2px;
     background-color: black;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.9 ease-in-out;
+    z-index: 20;
+
   }
 .menu-links{
     position: absolute;
@@ -91,8 +102,8 @@ a:hover{
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3 ease-in-out;
-        z-index: 10;
+    transition:all 0.9 ease-in-out;
+    z-index: 10;
 }
 .menu-links a{
     display: block;
@@ -101,7 +112,11 @@ a:hover{
     font-size: 1.5rem;
     color: black;
     text-decoration:underline;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.8 ease-in-out;
+    z-index: 10;
+
+
+    
 }
 .menu-links li{
     list-style: none;
@@ -171,6 +186,8 @@ section{
     justify-content:space-around;
     margin-top: 1000rem;
     gap: 1rem;
+    cursor: pointer;
+
 }
 .icon{
     cursor: pointer;
@@ -181,6 +198,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 1rem;
+
 }
 .btn{
     margin: 1rem;
@@ -189,6 +207,8 @@ section{
     padding: 1rem;
     width:8rem;
     border-radius: 2rem;
+    cursor: pointer;
+
 }
 .btn-color-1,
 .btn-color-2{
@@ -391,6 +411,7 @@ transition: transform .2s ease-in-out 0s ;
   .go-top-btn img {
     width: 25px;
     height: 25px;
+    z-index: 10;
   }
 .typewriter h1{
     font-family: monospace;
