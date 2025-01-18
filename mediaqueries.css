@@ -1,4 +1,7 @@
 @media  screen and (max-width: 1300px) {
+    *{
+    overflow-x: hidden;
+  }
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -13,6 +16,9 @@
 }
 
 @media screen and (max-width:1200px) {
+    *{
+    overflow-x: hidden;
+  }
     .navbar{
         display: none;
     }
@@ -48,6 +54,9 @@
 }
 
 @media  screen and (max-width: 600px) {
+    *{
+    overflow-x: hidden;
+  }
     #contact,
     footer{
         height: 40vh;
