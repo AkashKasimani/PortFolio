@@ -3,10 +3,17 @@
 *{
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 body{
     font-family: "Poppins",sans-serif;
     background: linear-gradient(to right,#5cc2f5,#ffd9a0);
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 p{
     color: rgb(85, 85, 85);
