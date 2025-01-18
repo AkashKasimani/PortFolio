@@ -84,8 +84,13 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
+    transition: transform 0.8s ease;
     
 }
+.hamburger-icon.open {
+    transform: rotate(-180deg);
+  }
+
 .hamburger-icon span {
     width: 100%;
     height: 2px;
@@ -94,55 +99,57 @@ a:hover{
     z-index: 20;
 
   }
-.menu-links{
+  .menu-links {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: rgba(255, 240, 240, 0.4);
     width: fit-content;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition:all 0.9 ease-in-out;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
     z-index: 10;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
-.menu-links a{
+
+.menu-links.open {
+    height: 300px; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.menu-links a {
     display: block;
-    padding:10px;
+    padding: 10px 20px; 
     text-align: center;
     font-size: 1.5rem;
     color: black;
-    text-decoration:underline;
-    transition: all 0.8 ease-in-out;
-    z-index: 10;
-
-
     
+    text-decoration: none; 
+    background-color: rgba(255, 255, 255, 0.5); 
+    margin: 5px 0; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
 }
-.menu-links li{
+
+.menu-links a:hover {
+    background:  linear-gradient(to right,#5cc2f5,#ffd9a0);
+    color: rgb(0, 0, 0); 
+    opacity: 0.8;
+}
+
+.menu-links li {
     list-style: none;
 }
+
 .menu-links.open{
+    display: block;
     max-height: 300px;
 }
-.hamburger-icon.open span:first-child{
-    transform: rotate(45deg) translate(10px,5px);
-}
-.hamburger-icon.open span:nth-child(2){
-    opacity: 0;
-}
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px,-5px);
-}
 
-.hamburger-icon span:first-child{
-    transform: none;
-}
-.hamburger-icon span:first-child{
-    opacity: 1;
-}
-.hamburger-icon span:first-child{
-    transform: none;
-}
 section{
     padding-top: 4vh;
     height: 96vh;
@@ -210,7 +217,14 @@ section{
     cursor: pointer;
 
 }
-.btn-color-1,
+.btn-color-1{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition: all 1s ease;
+
+    
+
+  }
 .btn-color-2{
     border: rgb(53, 53, 53) 0.1rem solid;
     transition: all 1s ease;
@@ -367,8 +381,40 @@ article{
   }
   
   .contact-icon{
-    cursor: default;
+    cursor: pointer;
     
+  }
+  .mail{
+  color: black;
+  background-size: 100% 0%;
+  transition: background-size 0.8s ease, transform 0.3s ease;
+}
+.in{
+    color:#0077B5;
+  }
+  .github{
+    color: #333333;
+  }
+  .mail:hover {
+    color: red;
+  }
+  .linkedin:hover{
+    color:#0077B5;
+  }
+  .git:hover{
+    color: #333333;
+  }
+  .facebook:hover{
+    color: #1877F2;
+  }
+  .instagram:hover{
+    color: #C13584;
+  }
+  .x:hover{
+    color: #1DA1F2;
+  }
+  .snap:hover{
+    color: #FFFC00;
   }
   
   /*FOOTER SECTION*/
