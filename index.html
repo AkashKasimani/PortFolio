@@ -26,13 +26,13 @@
     </nav>
     <nav class="hamburger-nav">
         <div class="logo typewriter" ><h1>Akash K</h1></div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="hamburger-menu" data-aos="fade-down" data-aos-delay="100">
+            <div class="hamburger-icon"  onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div class="menu-links">
+            <div class="menu-links" data-aos="fade-down" data-aos-delay="100">
                 <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li> <a href="#experience" onclick="toggleMenu()">Skills</a></li>
@@ -43,16 +43,18 @@
     </nav>
     <section id="profile">
         <div class="section__pic-container"  data-aos="fade-down" data-aos-delay="100">
-            <img src="./assets/cropped-image.png" alt="Akash`s profile picture">
+            <img src="./assets/cropped-image.png" alt="Akash`s profile picture" >
         </div>
         <div class="section__text">
             <p class="section__text_p1" data-aos="fade-down" data-aos-delay="150">Hello I'm</p>
             <h1 class="title" data-aos="fade-down" data-aos-delay="250">Akash</h1>
             <p class="section__text_p2" data-aos="fade-down" data-aos-delay="350">Web Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/Akash K.pdf')" data-aos="fade-right" data-aos-delay="250">Download</button>
-                <button class="btn btn-color-2" onclick="location.href='index.html#contact'" data-aos="fade-left" data-aos-delay="250">Contact Info</button>
-            </div>
+            
+                <button class="btn btn-color-1 " data-aos="fade-left" data-aos-delay="450" onclick="window.open('./assets/Akash K.pdf')" >Download</button>
+            
+
+                <button class="btn btn-color-1  " data-aos="fade-left" data-aos-delay="450" onclick="location.href='index.html#contact'" >Contact Info</button>
+            
             <div class="social-containers">
                 <i class="contact-icon bx bxl-linkedin bx-lg" data-aos="fade-right" data-aos-delay="250" onclick="location.href='https://www.linkedin.com/in/akash-k-4b1747251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"></i>
                 <i class="contact-icon bx bxl-github bx-lg" data-aos="fade-left" data-aos-delay="250" onclick="location.href='https://github.com/AkashKasimani'"></i>
@@ -61,15 +63,13 @@
         </div>
         
     </section>
-    <button class="go-top-btn">
-        <img src="./assets/arrow.png" alt="arrow up">
-    </button>
+    
     <section id="about">
         <p class="section__text_p1" data-aos="fade-up">Get to Know More !</p>
         <h1 class="title"data-aos="fade-down">About Me</h1>
         <div class="section-container" data-aos="fade-down" data-aos-delay="150" >
             <div class="section__pic-container">
-                <img src="./assets/20240913_155918-1.jpg" alt="about-pic" class="about-pic"> 
+                <img src=".\assets\20240913_155918-1.jpg" alt="about-pic" class="about-pic"> 
             </div>
             <div class="about-details-containers">
                 <div class="about-containers">
@@ -153,21 +153,11 @@
                             <p>Basic</p>
                         </div>
                     </article>
-
-                     <article>
-                        <i class="icon bx bxl-typescript bx-lg"></i>
-
-                        <div>
-                            <h3>TypeScript</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    
                     <article>
                         <img src="./assets/nestjs.svg" alt="experience icon"  class="icon"></i>
 
                         <div>
-                            <h3>Nest js</h3>
+                            <h3>Nest Js</h3>
                             <p>Intermediate</p>
                         </div>
                     </article>
@@ -181,6 +171,14 @@
                         </div>
                     </article>
 
+                    <article>
+                        <i class="icon bx bxl-typescript bx-lg"></i>
+
+                        <div>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
 
                     <article>
                         <i class="icon bx bxl-git bx-lg"></i>
@@ -228,14 +226,11 @@
                     <div class="article-container" data-aos="fade-up" data-aos-delay="250">
                         <img src="./assets/food.png" alt="project-2" class="project-img">
                     </div>
-                    <h3 class="experience-sub-title project-title" data-aos="fade-up" data-aos-delay="350">Food Ordering App</h3>
+                    <h3 class="experience-sub-title project-title" data-aos="fade-up" data-aos-delay="350">Food Orderkng App</h3>
                     <div class="btn-container" data-aos="fade-up" data-aos-delay="450">
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AkashKasimani/Foodmine-react-js'">GitHub</button>
                     </div>
                 </div>
-
-            
-               
                     
                 <div class="details-containers color-container" data-aos="fade-right" data-aos-delay="350">
                     <div class="article-container"data-aos="fade-right" data-aos-delay="250">
@@ -251,15 +246,16 @@
 
          <div class="about-containers">
 
-              <div class="details-containers color-container" data-aos="fade-left" data-aos-delay="350">
-                    <div class="article-container" data-aos="fade-left" data-aos-delay="250">
-                        <img src="./assets/download.png" alt="project-2" class="project-img">
-                    </div>
-                    <h3 class="experience-sub-title project-title" data-aos="fade-left" data-aos-delay="350">Portfolio</h3>
-                    <div class="btn-container" data-aos="fade-left" data-aos-delay="450">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AkashKasimani/PortFolio'">GitHub</button>
-                    </div>
+            <div class="details-containers color-container" data-aos="fade-left" data-aos-delay="350">
+                <div class="article-container" data-aos="fade-left" data-aos-delay="250">
+                    <img src="./assets/download.png" alt="project-2" class="project-img">
                 </div>
+                <h3 class="experience-sub-title project-title" data-aos="fade-left" data-aos-delay="350">Portfolio</h3>
+                <div class="btn-container" data-aos="fade-left" data-aos-delay="450">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AkashKasimani/PortFolio'">GitHub</button>
+                </div>
+            </div>
+            
             <div class="details-containers color-container" data-aos="fade-up" data-aos-delay="350">
                 <div class="article-container" data-aos="fade-up" data-aos-delay="250">
                     <img src="./assets/calc.png" alt="project-4" class="project-img">
@@ -270,7 +266,6 @@
                 </div>
                 </div>
 
-             
         
                     <div class="details-containers color-container" data-aos="fade-right" data-aos-delay="350">
                         <div class="article-container" data-aos="fade-right" data-aos-delay="250">
@@ -282,7 +277,12 @@
                         </div>
                         </div>
 
-                        <div class="about-containers">
+                        
+
+         </div>
+
+
+         <div class="about-containers">
 
             <div class="details-containers color-container" data-aos="fade-left" data-aos-delay="350">
                 <div class="article-container" data-aos="fade-left" data-aos-delay="250">
@@ -307,7 +307,7 @@
         
                     <div class="details-containers color-container" data-aos="fade-right" data-aos-delay="350">
                         <div class="article-container" data-aos="fade-right" data-aos-delay="250">
-                            <img src="./assets/weather.png" alt="project-9" class="project-img">
+                            <img src="./assets/weather.png" alt="project-5" class="project-img">
                         </div>
                         <h3 class="experience-sub-title project-title" data-aos="fade-right" data-aos-delay="350">Weather Report</h3>
                         <div class="btn-container" data-aos="fade-right" data-aos-delay="450">
@@ -367,7 +367,7 @@
     </nav>
     <p>Copyright &#2626; 2024 Akash. All Rights Reserved.</p>
 </footer>
-    
+   
 <script src="index.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
