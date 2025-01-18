@@ -28,6 +28,7 @@
     #profile,
     .section-container{
         display: block;
+        overflow-x:hidden;
     }
     .arrow{
         display: none;
