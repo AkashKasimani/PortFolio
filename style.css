@@ -51,7 +51,8 @@ nav{
 a{
     text-decoration: none;
     text-decoration-color: white;
-    color: black;
+    color: rgb(100, 100, 100);
+
 }
 a:hover{
     color: black;
