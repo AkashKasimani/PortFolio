@@ -50,8 +50,8 @@ nav{
 }
 a{
     text-decoration: none;
-    text-decoration-color: white;
-    color: rgb(100, 100, 100);
+    text-decoration-color: grey;
+    color: rgb(90, 90, 90);
 
 }
 a:hover{
@@ -386,10 +386,11 @@ article{
   
   .contact-icon{
     cursor: pointer;
+        color: black;
+
     
   }
   .mail{
-  color: black;
   background-size: 100% 0%;
   transition: background-size 0.8s ease, transform 0.3s ease;
 }
